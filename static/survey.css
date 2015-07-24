@@ -1,0 +1,47 @@
+.survey input{
+    position:absolute;
+    z-index:999;
+}
+
+.yes{background-image:url(yes.png);}
+.no{background-image:url(no.png);}
+
+.one{background-image:url(one.png);}
+.two{background-image:url(two.png);}
+.three{background-image:url(three.png);}
+.four{background-image:url(four.png);}
+.five{background-image:url(five.png);}
+
+.survey input:active +.formq{opacity: .9;}
+.survey input:checked +.formq{
+    -webkit-filter: none;
+       -moz-filter: none;
+            filter: none;
+}
+
+.formq{
+    cursor:pointer;
+    background-size:contain;
+    background-repeat:no-repeat;
+    display:inline-block;
+    width:175px;height:175px;
+    -webkit-transition: all 100ms ease-in;
+       -moz-transition: all 100ms ease-in;
+            transition: all 100ms ease-in;
+    -webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
+       -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
+            filter: brightness(1.8) grayscale(1) opacity(.7);
+}
+.formq:hover{
+    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+       -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+            filter: brightness(1.2) grayscale(.5) opacity(.9);
+
+}
+
+a:visited{color:#888}
+a{color:#444;text-decoration:none;}
+p{margin-bottom:.3em;}
+.formq input{ margin: 5px 0 0 12px; }
+.formq label{ margin-left: 7px; }
+span.form{ color:#6d84b4 }

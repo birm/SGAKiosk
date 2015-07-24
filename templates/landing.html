@@ -1,0 +1,32 @@
+<html>
+
+<head>
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+
+<ul>
+{% for message in messages %}
+  <li><strong>{{message}}</strong></li>
+  {% endfor %}
+</ul>
+{% endif %}
+{% endwith %}
+<table>
+<tbody>
+<tr>
+<td><a href="{{ url_for('surveyAnswer') }}"><img src="{{ url_for('static', filename='survey.jpg') }}" alt="Take the survey!"><a></td>
+<td><a href="{{ url_for('answerPage') }}"><img src="{{ url_for('static', filename='answers.jpg') }}" alt="Get answers!"></a></td>
+</tr>
+<tr>
+<td><a href="{{ url_for('surveyAnswer') }}">Take the survey!</a></td>
+<td><a href="{{ url_for('answerPage') }}">Get Answers!</a></td>
+</tr>
+</tbody>
+</table>
+
+</body>
+</html>

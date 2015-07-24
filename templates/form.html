@@ -1,0 +1,36 @@
+<html>
+<head>
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='survey.css') }}">
+</head>
+<body>
+<div class="survey">
+<form action="{{url_for('surveyAnswer')}}" method = 'POST' class="form"> 
+   
+    <p> SGA is actually a dragon</p>
+    
+        <input id="yes" type="radio" name="q1" value="yes" />
+        <label class="formq yes" for="yes"></label>
+        <input id="no" type="radio" name="q1" value="no" />
+        <label class="formq no" for="no"></label>
+
+    <p> How good is SGA at firebreathing? (1=worst, 5= best)</p>
+    <div class="q2-survey">
+        <input id="1" type="radio" name="q2" value="1" />
+        <label class="formq one" for="yes"></label>
+        <input id="2" type="radio" name="q2" value="2" />
+        <label class="formq two" for="yes"></label>
+        <input id="3" type="radio" name="q2" value="3" />
+        <label class="formq three" for="yes"></label>
+        <input id="4" type="radio" name="q2" value="4" />
+        <label class="formq four" for="yes"></label>
+        <input id="5" type="radio" name="q2" value="5" />
+        <label class="formq five" for="yes"></label>
+
+   <br><br>
+    <p class="submit"> 
+        <input type="submit" value="Create" /> 
+    </p> 
+    </div>
+   <small><div>Icons made by <a href="http://www.flaticon.com/authors/coucou" title="Coucou">Coucou</a> </div></small>
+</form>
+</body>

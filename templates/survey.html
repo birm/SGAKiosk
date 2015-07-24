@@ -1,0 +1,75 @@
+<html>
+<head>
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='survey.css') }}">
+</head>
+<body>
+<div class="survey">
+<form class="form" action="{{url_for('surveyAnswer')}}" method = 'POST'> 
+   
+    <p> SGA is actually a dragon</p>
+    
+        <input id="yes" type="radio" name="q1" value="yes" />
+        <label class="formq yes" for="yes"></label>
+        <input id="no" type="radio" name="q1" value="no" />
+        <label class="formq no" for="no"></label>
+
+    <p> How good is SGA at firebreathing? (1=worst, 5= best)</p>
+        <input id="1" type="radio" name="q2" value="1" />
+        <label class="formq one" for="1"></label>
+        <input id="2" type="radio" name="q2" value="2" />
+        <label class="formq two" for="2"></label>
+        <input id="3" type="radio" name="q2" value="3" />
+        <label class="formq three" for="3"></label>
+        <input id="4" type="radio" name="q2" value="4" />
+        <label class="formq four" for="4"></label>
+        <input id="5" type="radio" name="q2" value="5" />
+        <label class="formq five" for="5"></label>
+
+    <p> How well does SGA fit into the medieval theme? (1=worst, 5= best)</p>
+        <input id="12" type="radio" name="q3" value="1" />
+        <label class="formq one" for="12"></label>
+        <input id="22" type="radio" name="q3" value="2" />
+        <label class="formq two" for="22"></label>
+        <input id="32" type="radio" name="q3" value="3" />
+        <label class="formq three" for="32"></label>
+        <input id="42" type="radio" name="q3" value="4" />
+        <label class="formq four" for="42"></label>
+        <input id="52" type="radio" name="q3" value="5" />
+        <label class="formq five" for="52"></label>
+
+    <p> Did SGA destroy your castle with ease? (1=worst, 5= best)</p>
+        <input id="13" type="radio" name="q4" value="1" />
+        <label class="formq one" for="13"></label>
+        <input id="23" type="radio" name="q4" value="2" />
+        <label class="formq two" for="23"></label>
+        <input id="33" type="radio" name="q4" value="3" />
+        <label class="formq three" for="33"></label>
+        <input id="43" type="radio" name="q4" value="4" />
+        <label class="formq four" for="43"></label>
+        <input id="53" type="radio" name="q4" value="5" />
+        <label class="formq five" for="53"></label>
+
+    <p> Would you recommend SGA to an enemy? (1=worst, 5= best)</p>
+        <input id="14" type="radio" name="q5" value="1" />
+        <label class="formq one" for="14"></label>
+        <input id="24" type="radio" name="q5" value="2" />
+        <label class="formq two" for="24"></label>
+        <input id="34" type="radio" name="q5" value="3" />
+        <label class="formq three" for="34"></label>
+        <input id="44" type="radio" name="q5" value="4" />
+        <label class="formq four" for="44"></label>
+        <input id="54" type="radio" name="q5" value="5" />
+        <label class="formq five" for="54"></label>
+<br>
+<p>Comments:</p><input type='text' size='100' name='comments'>
+  <br>
+<br>
+    <p class="submit"> 
+        <input type="submit" value="Submit" /> 
+    </p> 
+    </div>
+<br>
+<br>
+   <small><div>Icons made by <a href="http://www.flaticon.com/authors/coucou" title="Coucou">Coucou</a> </div></small>
+</form>
+</body>
